@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { FC } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -25,8 +24,8 @@ function Item2({ title }: Props) {
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Item title="Hello Item1" />
+      <Item2 title="Hello Item2" />
     </View>
   );
 }
