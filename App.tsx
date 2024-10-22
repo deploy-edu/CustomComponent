@@ -15,8 +15,19 @@ const Item: FC<Props> = ({ title }) => {
 
 function Item2({ title }: Props) {
   return (
-    <View>
-      <Text>{title}</Text>
+    <View
+      style={{
+        padding: 20,
+        backgroundColor: '#f9c200',
+      }}
+    >
+      <Text
+        style={{
+          fontSize: 20,
+        }}
+      >
+        {title}
+      </Text>
     </View>
   );
 }
