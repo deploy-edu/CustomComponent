@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 type Props = {
   title: string;
@@ -23,10 +23,10 @@ function Item2({ title }: Props) {
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Item title="Hello Item1" />
       <Item2 title="Hello Item2" />
-    </View>
+    </SafeAreaView>
   );
 }
 
