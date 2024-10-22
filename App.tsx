@@ -7,8 +7,8 @@ type Props = {
 
 const Item: FC<Props> = ({ title }) => {
   return (
-    <View>
-      <Text>{title}</Text>
+    <View style={styles.item}>
+      <Text style={styles.itemText}>{title}</Text>
     </View>
   );
 };
@@ -34,7 +34,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  item: {
+    padding: 20,
+    backgroundColor: '#f9c2ff',
+  },
+  itemText: {
+    fontSize: 20,
   },
 });
