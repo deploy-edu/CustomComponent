@@ -1,16 +1,9 @@
-import { FC } from 'react';
+import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import Item from './Item';
 
 type Props = {
   title: string;
-};
-
-const Item: FC<Props> = ({ title }) => {
-  return (
-    <View style={styles.item}>
-      <Text style={styles.itemText}>{title}</Text>
-    </View>
-  );
 };
 
 function Item2({ title }: Props) {
@@ -45,12 +38,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  item: {
-    padding: 20,
-    backgroundColor: '#f9c2ff',
-  },
-  itemText: {
-    fontSize: 20,
   },
 });
